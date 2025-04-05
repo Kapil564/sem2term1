@@ -1,0 +1,130 @@
+.Navbar {
+    height: 70px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* padding: 0 20px; */
+}
+  
+.Navbar img {
+    height: 40px;
+    width: auto;
+    margin-right: 15px;
+}
+  
+.Logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    margin-right: auto;
+}
+  
+.Navbar .Search {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.getstartedhere, .LogIn {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.LogIn {
+    background-color: #4d90fe;
+    color: white;
+    font-weight: 500;
+}
+
+.LogIn:hover {
+    background-color: #3a78d4;
+}
+
+.getstartedhere:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Large devices (laptops/desktops, 992px and below) */
+@media screen and (max-width: 992px) {
+    .Navbar {
+        height:fit-content;
+        width:100%;
+        flex-direction: column;
+    }
+
+    .Logo {
+        font-size: 10px;
+    }
+
+    .getstartedhere, .LogIn {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 0 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media screen and (max-width: 768px) {
+    .Navbar {
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .Navbar img {
+        height: 35px;
+    }
+
+    .Logo {
+        font-size: 10px;
+    }
+
+    .Navbar .Search {
+        margin: 0 10px;
+    }
+}
+
+/* Small devices (mobile phones, 576px and below) */
+@media screen and (max-width: 576px) {
+    .Navbar {
+        height: fit-content;
+        width:100%;
+        padding-top:10px;
+    }
+
+    .Navbar img {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .Logo {
+        font-size: 16px;
+    }
+
+    .getstartedhere, .LogIn {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
+    .Navbar .Search {
+        display: none; /* Hide search on mobile if needed */
+    }
+}
+
+/* Optional: Add hamburger menu for mobile */
+@media screen and (max-width: 480px) {
+    .getstartedhere {
+        display: none; /* Hide "Get Started" on very small screens */
+    }
+}
