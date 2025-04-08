@@ -22,8 +22,7 @@
   }
   
   .search-textarea::placeholder {
-    padding:10px;
-    color: #999;
+    color: #0b0b0b;
   }
   /* desktop devicce */
   @media screen and (max-width: 992px) {

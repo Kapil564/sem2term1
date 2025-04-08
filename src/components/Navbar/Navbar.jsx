@@ -6,7 +6,7 @@ export default function Navbar(){
             <img src="#" alt="Icon"/>
             <p className="Logo">ShopNow</p>
             <Search/>
-            <p className="getstartedhere">Get Started from here</p>
+            <p className="getstartedhere">Get Started</p>
             <p className="LogIn">LogIn</p>
         </div>
     );
