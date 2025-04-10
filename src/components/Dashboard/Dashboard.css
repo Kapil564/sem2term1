@@ -1,0 +1,14 @@
+.paragraph {
+    background-image: url("../../../src/assets/1709552807854.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content:end;
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+}

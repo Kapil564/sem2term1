@@ -1,13 +1,15 @@
 import Search from "../Search/Search";
 import "./Navbar.css"
+import {Link} from 'react-router-dom'
+import Login from "../Login/login";
 export default function Navbar(){
     return(
         <div className="Navbar">
             <img src="#" alt="Icon"/>
-            <p className="Logo">ShopNow</p>
+            <Link to="/" className="Logo">UpStore</Link>
             <Search/>
-            <p className="getstartedhere">Get Started</p>
-            <p className="LogIn">LogIn</p>
+            <Link to="/SignUp" className="getstartedhere">Get Started</Link>
+            <Link to="/Login"onClick={<Login/>}className="LogIn">Login</Link>
         </div>
     );
 }
