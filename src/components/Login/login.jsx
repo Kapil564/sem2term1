@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
+
 
 export default function Login() {
     const navigate = useNavigate();
@@ -22,8 +23,10 @@ export default function Login() {
         }));
     };
 
+
     const handleSignUp = () => {
-        navigate('/signup');
+        console.log("SignUP")
+        navigate("/SignUp");
     };
 
     return (
