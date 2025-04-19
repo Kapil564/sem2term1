@@ -1,22 +1,25 @@
+import React from "react";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Login from "./components/Login/login";
-import SignUp from "./components/SignUp/SignUp";
-import Footer from "./components/Footer/Footer";
-import Dashboard from "./components/Dashboard/Dashboard";
+import { Navbar, Login, SignUp, Footer, Dashboard } from "./components";
 
 function App() {
+  // return elements
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={[<Dashboard />, <Footer />]} />
-          <Route path="/Login" element={<Login />}></Route>
-          <Route path="/SignUp" element={<SignUp />}></Route>
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-600">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/Login" element={<Login />}></Route>
+              <Route path="/SignUp" element={<SignUp />}></Route>
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 

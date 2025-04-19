@@ -9,7 +9,7 @@ export default function Login() {
         username: "",
         password: ""
     });
-    // from one page to other use useNavigate with component path
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form submitted:", formData);

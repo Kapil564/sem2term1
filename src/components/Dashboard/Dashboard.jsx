@@ -1,17 +1,31 @@
+import { useState, useEffect } from "react";
+import "./Dashboard.css";
+import ProductCard from "./ProductCard";
+import axios from 'axios';
 
-import "./Dashboard.css"
-export default function dashboard(){
+export default function Dashboard() {
+    const [products, setProducts] = useState([]);
+    
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await axios.get('https://fakestoreapi.com/products');
+                setProducts(response.data);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
 
-    return(
-        <>
-            <p className="paragraph"> 
-                Hey, fam! 👋 Welcome to Upstore, the ultimate online marketplace where businesses
-                can list and sell their awesome products! Think of us as the cool, chill aunt who
-                helps connect all the rad businesses with their ideal customers. We're all about making 
-                selling super easy and connecting buyers with the products they need and want. So ditch
-                the boring old marketplace and join the Upstore party! 🎉 We've got the vibes, the deals,
-                and the best darn community on the internet! 🚀</p>
+        fetchProducts();
+    }, []);
 
-        </>
+    return (
+        <div className="dashboard">
+            <div className="products-grid">
+                {products.map((item) => (
+                    <ProductCard key={item.id} item={item} />
+                ))}
+            </div>
+        </div>
     );
 }
