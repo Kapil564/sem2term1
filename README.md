@@ -2,7 +2,6 @@
 
 A modern React application built with Vite, featuring Material-UI, Tailwind CSS, and React Router.
 
-<<<<<<< HEAD
 ## 📖 About the Project
 
 This project is a modern web application built with React and Vite, designed to provide a fast and efficient development experience. It combines the power of Material-UI and Tailwind CSS for beautiful, responsive user interfaces, while leveraging React Router for seamless navigation.
@@ -28,7 +27,7 @@ Whether you're building a personal project, a business application, or a portfol
 ## 📋 Prerequisites
 
 - Node.js (version 18 or higher)
-- npm or yarn package manager
+- npm  package manager
 =======
 ## 🚀 Features
 
@@ -43,7 +42,7 @@ Whether you're building a personal project, a business application, or a portfol
 
 - Node.js (version 18 or higher)
 - npm  package manager
->>>>>>> 3f06fc8506569721bdf512254634dc50b7721c0d
+
 
 ## 🛠️ Installation
 
@@ -56,11 +55,6 @@ cd project
 2. Install dependencies:
 ```bash
 npm install
-<<<<<<< HEAD
-# or
-yarn install
-=======
->>>>>>> 3f06fc8506569721bdf512254634dc50b7721c0d
 ```
 
 ## 🚀 Development
@@ -70,24 +64,10 @@ To start the development server:
 ```bash
 npm run dev
 <<<<<<< HEAD
-# or
-yarn dev
-=======
->>>>>>> 3f06fc8506569721bdf512254634dc50b7721c0d
 ```
 
 The application will be available at `http://localhost:5173`
 
-<<<<<<< HEAD
-## 📦 Build
-
-To create a production build:
-
-```bash
-npm run build
-# or
-yarn build
-```
 
 ## 🔍 Preview Production Build
 
@@ -95,22 +75,8 @@ To preview the production build:
 
 ```bash
 npm run preview
-# or
-yarn preview
 ```
 
-## 🧹 Linting
-
-To run ESLint:
-
-```bash
-npm run lint
-# or
-yarn lint
-```
-
-=======
->>>>>>> 3f06fc8506569721bdf512254634dc50b7721c0d
 ## 🛠️ Tech Stack
 
 - React 19
@@ -134,12 +100,6 @@ project/
 └── eslint.config.js # ESLint configuration
 ```
 
-<<<<<<< HEAD
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-=======
->>>>>>> 3f06fc8506569721bdf512254634dc50b7721c0d
 
 ## 🤝 Contributing
 
