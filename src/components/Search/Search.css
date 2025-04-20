@@ -2,7 +2,8 @@
     width: 700px;
     height: 40px;
     padding: 8px 40px 8px 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #0e0c0c;
+    background-color: rgb(255, 242, 242);
     border-radius: 20px;
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -14,15 +15,16 @@
     background-position: calc(100% - 12px) center;
     background-repeat: no-repeat;
     overflow: hidden;
+    color:rgb(0, 0, 0);
   }
   
   .search-textarea:focus {
-    border-color: #4d90fe;
-    box-shadow: 0 2px 8px rgba(77, 144, 254, 0.3);
+    border-color: #818183;
+    box-shadow: 0 5px 10px rgba(35, 84, 163, 0.3);
   }
   
   .search-textarea::placeholder {
-    color: #0b0b0b;
+    color: #141313;
   }
   /* desktop devicce */
   @media screen and (max-width: 992px) {

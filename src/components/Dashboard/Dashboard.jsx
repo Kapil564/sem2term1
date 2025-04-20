@@ -1,24 +1,14 @@
 import { useState, useEffect } from "react";
 import "./Dashboard.css";
 import ProductCard from "./ProductCard";
-import axios from 'axios';
-
+import { Productlist } from "../product";
 export default function Dashboard() {
     const [products, setProducts] = useState([]);
     
     useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await axios.get('https://fakestoreapi.com/products');
-                setProducts(response.data);
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
-
-        fetchProducts();
-    }, []);
-
+        setProducts(Productlist)
+    }, []); 
+    
     return (
         <div className="dashboard">
             <div className="products-grid">

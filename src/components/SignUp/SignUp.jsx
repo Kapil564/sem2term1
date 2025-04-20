@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './SignUp.css';
-
+import { useNavigate } from 'react-router-dom';
 export default function SignUp() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -20,8 +21,7 @@ export default function SignUp() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add your signup logic here
-        console.log('Form submitted:', formData);
+        navigate("/")
     };
 
     return (

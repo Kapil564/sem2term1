@@ -3,7 +3,7 @@ import "./Search.css"
 export default function Search() {
     return (
         <div >
-           <textarea className="search-textarea" placeholder="Search..."></textarea>
+           <input className="search-textarea" placeholder="Search..."></input>
         </div>
     )
 

@@ -17,7 +17,6 @@ export default function Navbar() {
             
             <div className="navbar-right">
                 <Link to="/SignUp" className="nav-link get-started">Get Started</Link>
-                <Link to="/Login" className="nav-link login">Login</Link>
             </div>
         </nav>
     );

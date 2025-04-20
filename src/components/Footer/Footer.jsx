@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import social from "../../assets/social.png";
 import Instagram from "../../assets/instagram.png";
 import Youtube from "../../assets/youtube.png";
@@ -6,6 +7,20 @@ import FaceBook from "../../assets/facebook.png";
 import "./Footer.css";
 
 export default function Footer() {
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (email) {
+      // Here you can add your subscription logic
+      console.log('Subscribing email:', email);
+      alert('Thank you for subscribing!');
+      setEmail(''); // Clear the input after subscription
+    } else {
+      alert('Please enter a valid email address');
+    }
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -32,16 +47,22 @@ export default function Footer() {
 
         <div className="footer-section newsletter">
           <h3 className="section-title">Stay Updated</h3>
-          <div className="newsletter-form">
+          <form className="newsletter-form" onSubmit={handleSubscribe}>
             <input
               type="email"
               placeholder="Enter your email"
               className="newsletter-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
-            <button className="subscribe-button">
+            <button 
+              type="submit" 
+              className="subscribe-button"
+            >
               Subscribe
             </button>
-          </div>
+          </form>
         </div>
 
         <div className="footer-section address">
@@ -58,7 +79,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p className="copyright">
-          © 2024 UpStore. All rights reserved.
+          © 2025 UpStore. All rights reserved.
         </p>
       </div>
     </footer>
