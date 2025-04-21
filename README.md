@@ -27,7 +27,7 @@ Whether you're building a personal project, a business application, or a portfol
 ## 📸 Site Preview
 
 ### Main Product Listing
-![Main Product Listing](screenshots/preview1.jpg)
+![Screenshot 2025-04-21 161445](https://github.com/user-attachments/assets/25fa51bc-41eb-4829-8a1a-8b08fd3001a3)
 
 Our main product listing page features:
 - Clean and modern product grid layout
@@ -37,7 +37,8 @@ Our main product listing page features:
 - Navigation menu with Cart, Favorites, and Purchased sections
 
 ### Shopping Cart Interface
-![Shopping Cart](screenshots/preview2.jpg)
+![image](https://github.com/user-attachments/assets/5ab9fc59-2294-4731-9b40-8a1670341d48)
+
 
 The shopping cart interface includes:
 - Detailed product listing with images
@@ -73,8 +74,7 @@ To start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
+
 ```
 
 The application will be available at `http://localhost:5173`
@@ -85,25 +85,8 @@ To create a production build:
 
 ```bash
 npm run build
-# or
-yarn build
-```
-
-## 🔍 Preview Production Build
-
-To preview the production build:
-
-```bash
-npm run preview
 
 ```
-
-## 🧹 Linting
-
-
-
-
-
 
 ## 🛠️ Tech Stack
 
@@ -151,9 +134,6 @@ project/
 └── eslint.config.js         # ESLint configuration
 ```
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🤝 Contributing
 
