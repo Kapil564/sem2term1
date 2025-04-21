@@ -96,7 +96,7 @@ npm run build
 - Tailwind CSS 4
 - React Router 7
 - Axios
-- ESLint
+- NPM
 
 ## 📁 Project Structure
 
