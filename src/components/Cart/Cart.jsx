@@ -8,7 +8,10 @@ const Cart = () => {
   const calculateTotal = () => {
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
   };
-
+    function handlecheckout(){
+     // if user is logged in proceed with checkout 
+     // if not then signup form 
+    }
   return (
     <div className="cart-container">
       <h2>Your Cart</h2>
@@ -62,7 +65,7 @@ const Cart = () => {
               <span>Total</span>
               <span>₹{calculateTotal().toFixed(2)}</span>
             </div>
-            <button className="checkout-btn">Proceed to Checkout</button>
+            <button className="checkout-btn" onClick={handlecheckout}>Proceed to Checkout</button>
           </div>
         </>
       )}
