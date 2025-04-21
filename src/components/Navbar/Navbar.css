@@ -30,29 +30,8 @@
     transition: color 0.3s ease;
 }
 
-.logo-text:hover {
-    color: #60a5fa;
-}
 
-.navbar-center {
-    flex: 1;
-    max-width: 600px;
-    margin: 0 2rem;
-}
 
-.navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.nav-link {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
 
 .get-started {
     color: #ffffff;
@@ -64,13 +43,30 @@
     color: #1a1a1a;
 }
 
-.login {
-    background-color: #60a5fa;
-    color: #ffffff;
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.login:hover {
-    background-color: #3b82f6;
+.username {
+    color: #333;
+    font-weight: 500;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
 }
 
 /* Responsive Design */
@@ -101,6 +97,15 @@
     .nav-link {
         padding: 0.375rem 0.75rem;
         font-size: 0.875rem;
+    }
+
+    .username {
+        display: none;
+    }
+
+    .logout-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 }
 
