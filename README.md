@@ -1,4 +1,4 @@
-# React Project with Vite
+# UpStore
 
 A modern React application built with Vite, featuring Material-UI, Tailwind CSS, and React Router.
 
