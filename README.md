@@ -21,13 +21,13 @@ Whether you're building a personal project, a business application, or a portfol
 - 🎨 Styling with Material-UI and Tailwind CSS
 - 🔄 React Router for navigation
 - 📦 Axios for HTTP requests
-- 🧹 ESLint for code quality
 - 🔥 Hot Module Replacement (HMR)
 
 ## 📸 Site Preview
 
 ### Main Product Listing
-![Screenshot 2025-04-21 161445](https://github.com/user-attachments/assets/25fa51bc-41eb-4829-8a1a-8b08fd3001a3)
+![Screenshot 2025-04-21 161418](https://github.com/user-attachments/assets/4cc3e731-984a-401c-87bc-3ad73518dbaf)
+
 
 Our main product listing page features:
 - Clean and modern product grid layout
